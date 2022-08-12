@@ -1,0 +1,48 @@
+{
+  "name": "@tst-labs/tst-crud-react",
+  "version": "0.0.1",
+  "description": "Biblioteca de componentes CRUD",
+  "private": false,
+  "author": {
+    "name": "Tribunal Superior do Trabalho - TST",
+    "email": "ssadm@tst.jus.br"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "source": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build-watch": "rollup -c -w",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test --passWithNoTests"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-url": "^7.0.0",
+    "@svgr/rollup": "^6.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "rollup": "^2.71.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "webpack": "^5.72.0"
+  }
+}
