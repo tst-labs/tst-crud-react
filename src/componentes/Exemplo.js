@@ -1,5 +1,5 @@
 import React from "react";
-import { CRUD_SERVICE_URL } from "../api/env";
+import { CRUD_SERVICE_URL } from "../shared/env";
 
 const Exemplo = () => {
   return (
