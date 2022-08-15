@@ -1,12 +1,11 @@
 import React from "react";
-import { useApiUrl } from "./CrudProvider/CrudProvider";
+import { CRUD_SERVICE_URL } from "../api/env";
 
 const Exemplo = () => {
-  const apiUrl = useApiUrl();
   return (
     <div>
       O uso de tst-crud-react funcionou!
-      {apiUrl}
+      {CRUD_SERVICE_URL}
     </div>
   );
 };
